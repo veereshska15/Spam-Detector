@@ -1,239 +1,278 @@
-# 🧠 SPAM // DETECTOR
-
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║       ███████╗██████╗  █████╗ ███╗   ███╗                      ║
-║       ██╔════╝██╔══██╗██╔══██╗████╗ ████║                      ║
-║       ███████╗██████╔╝███████║██╔████╔██║                      ║
-║       ╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║                      ║
-║       ███████║██║     ██║  ██║██║ ╚═╝ ██║                      ║
-║       ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝                      ║
-║                                                                  ║
-║                 // AI MESSAGE THREAT ANALYZER //                ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+# ✉️ SPAM DETECTOR
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/PYTHON-3.x-00ff41?style=for-the-badge&logo=python&logoColor=black"/>
-<img src="https://img.shields.io/badge/STREAMLIT-AI%20UI-ff004c?style=for-the-badge&logo=streamlit&logoColor=white"/>
-<img src="https://img.shields.io/badge/SCIKIT--LEARN-ML-00e5ff?style=for-the-badge&logo=scikitlearn&logoColor=black"/>
-<img src="https://img.shields.io/badge/NAIVE%20BAYES-CLASSIFIER-7b2cff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/STATUS-ACTIVE-00ff41?style=for-the-badge"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050014,45:19005c,75:5b00ff,100:00d9ff&height=220&section=header&text=SPAM%20DETECTOR&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20POWERED%20MESSAGE%20THREAT%20DETECTION&descAlignY=63&descSize=18&descColor=00d9ff" width="100%">
 
 </p>
 
 <p align="center">
 
-**A machine-learning powered system that analyzes text messages and classifies them as `SPAM` or `NOT SPAM`.**
+```text
+✉  MESSAGE SECURITY // AI CLASSIFICATION ENGINE  ✉
+```
 
 </p>
-
----
-
-## `01 // SYSTEM OVERVIEW`
-
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                    MESSAGE INPUT                            │
-│                         │                                   │
-│                         ▼                                   │
-│                ┌─────────────────┐                          │
-│                │ TEXT PROCESSING │                          │
-│                └────────┬────────┘                          │
-│                         │                                   │
-│                         ▼                                   │
-│                ┌─────────────────┐                          │
-│                │ COUNT VECTORIZER│                          │
-│                └────────┬────────┘                          │
-│                         │                                   │
-│                         ▼                                   │
-│                ┌─────────────────┐                          │
-│                │ MULTINOMIAL NB  │                          │
-│                │   ML CLASSIFIER  │                          │
-│                └────────┬────────┘                          │
-│                         │                                   │
-│              ┌──────────┴──────────┐                        │
-│              ▼                     ▼                        │
-│        ┌───────────┐        ┌────────────┐                  │
-│        │   SPAM    │        │  NOT SPAM  │                  │
-│        └───────────┘        └────────────┘                  │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## `02 // PROJECT DESCRIPTION`
-
-**Spam Detector** is a Python-based machine learning application designed to identify whether a text message is likely to be spam.
-
-The project uses:
-
-* 🐍 **Python**
-* 🧠 **Multinomial Naive Bayes**
-* 🔤 **CountVectorizer**
-* 📊 **Pandas**
-* 🤖 **Scikit-learn**
-* 🖥️ **Streamlit**
-
-The trained model learns patterns from labeled SMS messages and predicts the category of new messages.
-
-```text
-INPUT MESSAGE
-      │
-      ▼
-TEXT → FEATURES → ML MODEL → CLASSIFICATION
-                              │
-                    ┌─────────┴─────────┐
-                    ▼                   ▼
-                  SPAM              NOT SPAM
-```
-
----
-
-# `03 // 3D AI PIPELINE`
 
 <p align="center">
 
-```text
-                         ╔═══════════════╗
-                         ║   USER TEXT   ║
-                         ╚═══════╤═══════╝
-                                 │
-                                 ▼
-                    ╔══════════════════════╗
-                    ║   TEXT VECTORIZATION ║
-                    ║   CountVectorizer    ║
-                    ╚══════════╤═══════════╝
-                               │
-                               ▼
-                  ╔══════════════════════════╗
-                  ║     FEATURE MATRIX       ║
-                  ║      X₁ X₂ X₃ ... Xₙ    ║
-                  ╚════════════╤═════════════╝
-                               │
-                               ▼
-                 ╔═══════════════════════════╗
-                 ║    NAIVE BAYES ENGINE     ║
-                 ║                           ║
-                 ║    P(SPAM | MESSAGE)      ║
-                 ║    P(HAM  | MESSAGE)      ║
-                 ╚════════════╤══════════════╝
-                              │
-                       ┌──────┴──────┐
-                       ▼             ▼
-                 ╔══════════╗   ╔══════════╗
-                 ║  SPAM    ║   ║ NOT SPAM ║
-                 ╚══════════╝   ╚══════════╝
-```
+<img src="https://img.shields.io/badge/PYTHON-00D9FF?style=for-the-badge&logo=python&logoColor=ffffff">
+<img src="https://img.shields.io/badge/STREAMLIT-7B2CFF?style=for-the-badge&logo=streamlit&logoColor=ffffff">
+<img src="https://img.shields.io/badge/SCIKIT--LEARN-BF3EFF?style=for-the-badge&logo=scikit-learn&logoColor=ffffff">
+<img src="https://img.shields.io/badge/PANDAS-00E5FF?style=for-the-badge&logo=pandas&logoColor=ffffff">
+<img src="https://img.shields.io/badge/NAIVE%20BAYES-FF3CAC?style=for-the-badge">
 
 </p>
 
 ---
 
-# `04 // MACHINE LEARNING ENGINE`
+## `> SYSTEM STATUS`
 
-### 🧠 Multinomial Naive Bayes
+```text
+╔════════════════════════════════════════════════════════════╗
+║                                                            ║
+║                 ✉  SPAM DETECTOR                           ║
+║                                                            ║
+║   SYSTEM        : ● ONLINE                                 ║
+║   LANGUAGE      : PYTHON                                   ║
+║   ENGINE        : MULTINOMIAL NAIVE BAYES                  ║
+║   NLP           : COUNT VECTORIZER                         ║
+║   INTERFACE     : STREAMLIT                                ║
+║   MODE          : MESSAGE CLASSIFICATION                   ║
+║   STATUS        : ◆ READY                                  ║
+║                                                            ║
+╚════════════════════════════════════════════════════════════╝
+```
 
-The project uses the **Multinomial Naive Bayes** algorithm for text classification.
+---
 
-It is particularly suitable for classification problems involving word frequencies and document features.
+## `> AI ENGINE`
+
+### ✉ → 🧠 → 🚨
+
+```text
+                         ✉
+                  INCOMING MESSAGE
+                         │
+                         ▼
+                ┌─────────────────┐
+                │  TEXT ANALYZER  │
+                │    PYTHON/NLP   │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ COUNT VECTORIZER│
+                │   FEATURE CORE  │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │  NAIVE BAYES    │
+                │    AI ENGINE    │
+                └────────┬────────┘
+                         │
+                    ┌────┴────┐
+                    ▼         ▼
+               ┌────────┐ ┌────────────┐
+               │ 🚨 SPAM│ │ 🛡️ NOT SPAM│
+               └────────┘ └────────────┘
+```
+
+---
+
+## `> ABOUT`
+
+**Spam Detector** is a Python-based machine learning application that analyzes text messages and classifies them as:
+
+```text
+╭──────────────────────╮
+│                      │
+│      🚨 SPAM        │
+│                      │
+╰──────────────────────╯
+
+          OR
+
+╭──────────────────────╮
+│                      │
+│    🛡️ NOT SPAM       │
+│                      │
+╰──────────────────────╯
+```
+
+The system uses **Natural Language Processing**, **CountVectorizer**, and a **Multinomial Naive Bayes classifier** to learn patterns from SMS messages.
+
+The application is deployed through an interactive **Streamlit interface**.
+
+---
+
+## `> CORE TECHNOLOGY`
+
+```text
+╔════════════════════════════════════════════════════════╗
+║                                                        ║
+║  🐍 PYTHON                                             ║
+║      └── Core application                             ║
+║                                                        ║
+║  📊 PANDAS                                             ║
+║      └── Dataset processing                           ║
+║                                                        ║
+║  🔤 COUNT VECTORIZER                                   ║
+║      └── Text → Numerical features                    ║
+║                                                        ║
+║  🧠 MULTINOMIAL NAIVE BAYES                            ║
+║      └── Message classification                       ║
+║                                                        ║
+║  🖥️ STREAMLIT                                         ║
+║      └── Interactive web interface                    ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝
+```
+
+---
+
+## `> HOW IT WORKS`
+
+```text
+[ 01 ] LOAD DATASET
+       │
+       ▼
+[ 02 ] REMOVE DUPLICATES
+       │
+       ▼
+[ 03 ] SPLIT TRAIN / TEST DATA
+       │
+       ▼
+[ 04 ] TEXT VECTORIZATION
+       │
+       ▼
+[ 05 ] TRAIN NAIVE BAYES MODEL
+       │
+       ▼
+[ 06 ] RECEIVE MESSAGE
+       │
+       ▼
+[ 07 ] AI PREDICTION
+       │
+       ├────────────────┐
+       ▼                ▼
+    🚨 SPAM          🛡️ NOT SPAM
+```
+
+---
+
+## `> PYTHON ML CORE`
 
 ```python
+import pandas as pd
+
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
+import streamlit as st
+```
+
+### Model
+
+```python
 model = MultinomialNB()
 
 model.fit(features, cat_train)
 ```
 
-### Why Naive Bayes?
-
-```text
-                 TEXT CLASSIFICATION
-                        │
-          ┌─────────────┼─────────────┐
-          ▼             ▼             ▼
-       FAST           SIMPLE       EFFECTIVE
-          │             │             │
-          └─────────────┼─────────────┘
-                        ▼
-                MULTINOMIAL NB
-```
-
-Advantages:
-
-* ⚡ Fast training
-* 🧠 Effective for text classification
-* 📦 Lightweight
-* 🔍 Easy to understand
-* 💻 Works efficiently with sparse feature matrices
-
----
-
-# `05 // FEATURE EXTRACTION`
-
-The raw text cannot be directly processed by the machine learning model.
-
-Therefore, the project converts text into numerical features using:
+### Prediction
 
 ```python
-from sklearn.feature_extraction.text import CountVectorizer
+def predict(message):
 
-cv = CountVectorizer(stop_words="english")
+    input_message = cv.transform([message]).toarray()
 
-features = cv.fit_transform(mess_train)
-```
+    result = model.predict(input_message)
 
-### Processing flow
-
-```text
-"Congratulations you won a lottery"
-
-                 │
-                 ▼
-
-        ┌─────────────────┐
-        │ Remove stopwords│
-        └────────┬────────┘
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ Tokenize words  │
-        └────────┬────────┘
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ Count frequency │
-        └────────┬────────┘
-                 │
-                 ▼
-        Numerical Feature Matrix
+    return result
 ```
 
 ---
 
-# `06 // DATASET`
+## `> MESSAGE ANALYSIS`
 
-The project uses an SMS spam dataset containing labeled messages.
-
-Each message belongs to one of two classes:
-
-| Category | Meaning                       |
-| -------- | ----------------------------- |
-| `ham`    | Normal message                |
-| `spam`   | Unwanted / suspicious message |
-
-The project converts these labels into:
+### 🚨 SPAM DETECTED
 
 ```text
-ham  → NOT SPAM
-spam → SPAM
+╔══════════════════════════════════════════════╗
+║                                              ║
+║  ✉ INCOMING MESSAGE                         ║
+║                                              ║
+║  "Congratulations! You won a lottery"       ║
+║                                              ║
+║  ──────────────────────────────────────────  ║
+║                                              ║
+║  ⚠ THREAT DETECTED                           ║
+║  CLASSIFICATION : SPAM                       ║
+║                                              ║
+╚══════════════════════════════════════════════╝
 ```
 
-Dataset preprocessing:
+### 🛡️ MESSAGE CLEARED
+
+```text
+╔══════════════════════════════════════════════╗
+║                                              ║
+║  ✉ INCOMING MESSAGE                         ║
+║                                              ║
+║  "Hey, are you coming to college today?"    ║
+║                                              ║
+║  ──────────────────────────────────────────  ║
+║                                              ║
+║  ✓ MESSAGE CLEARED                           ║
+║  CLASSIFICATION : NOT SPAM                   ║
+║                                              ║
+╚══════════════════════════════════════════════╝
+```
+
+> A `Not Spam` prediction means the model classified the message as non-spam based on its training data; it does not guarantee that a message is safe.
+
+---
+
+## `> STREAMLIT INTERFACE`
+
+```text
+╔═══════════════════════════════════════════════╗
+║                                               ║
+║             ✉ SPAM DETECTION                 ║
+║                                               ║
+║  Enter your message here                     ║
+║                                               ║
+║  ┌─────────────────────────────────────────┐  ║
+║  │ Congratulations! You won...            │  ║
+║  └─────────────────────────────────────────┘  ║
+║                                               ║
+║              [ VALIDATE ]                     ║
+║                                               ║
+╚═══════════════════════════════════════════════╝
+```
+
+Run the application:
+
+```bash
+streamlit run spamDetection.py
+```
+
+---
+
+## `> DATASET`
+
+The dataset contains SMS messages labeled as:
+
+```text
+ham  → Not Spam
+
+spam → Spam
+```
+
+Preprocessing:
 
 ```python
 data.drop_duplicates(inplace=True)
@@ -246,93 +285,33 @@ data["Category"] = data["Category"].replace(
 
 ---
 
-# `07 // SYSTEM ARCHITECTURE`
-
-```text
-                    ┌────────────────────┐
-                    │      USER           │
-                    └─────────┬──────────┘
-                              │
-                              ▼
-                    ┌────────────────────┐
-                    │    STREAMLIT UI     │
-                    └─────────┬──────────┘
-                              │
-                              ▼
-                    ┌────────────────────┐
-                    │   TEXT MESSAGE     │
-                    └─────────┬──────────┘
-                              │
-                              ▼
-                    ┌────────────────────┐
-                    │ COUNT VECTORIZER   │
-                    └─────────┬──────────┘
-                              │
-                              ▼
-                    ┌────────────────────┐
-                    │ MULTINOMIAL NAIVE  │
-                    │      BAYES         │
-                    └─────────┬──────────┘
-                              │
-                    ┌─────────┴─────────┐
-                    ▼                   ▼
-             ┌────────────┐      ┌────────────┐
-             │    SPAM    │      │  NOT SPAM  │
-             └────────────┘      └────────────┘
-```
-
----
-
-# `08 // TECH STACK`
-
-```text
-┌──────────────────────────────────────────────────┐
-│                  TECHNOLOGY STACK                │
-├──────────────────────────────────────────────────┤
-│                                                  │
-│  LANGUAGE        → Python                       │
-│  ML FRAMEWORK    → Scikit-learn                 │
-│  CLASSIFIER      → Multinomial Naive Bayes      │
-│  NLP             → CountVectorizer              │
-│  DATA            → Pandas                       │
-│  UI              → Streamlit                    │
-│  VERSION CONTROL → Git + GitHub                 │
-│                                                  │
-└──────────────────────────────────────────────────┘
-```
-
----
-
-# `09 // PROJECT STRUCTURE`
+## `> PROJECT STRUCTURE`
 
 ```text
 Spam-Detector/
 │
-├── 🐍 spamDetection.py
-│      └── Main Python application
+├── ✉ spamDetection.py
 │
 ├── 📊 spam.csv
-│      └── SMS training dataset
 │
 ├── 📦 requirements.txt
-│      └── Python dependencies
 │
 ├── 📖 README.md
-│      └── Project documentation
 │
-└── ⚖️ LICENSE
-       └── MIT License
+└── ⚖ LICENSE
 ```
 
 ---
 
-# `10 // INSTALLATION`
+## `> INSTALLATION`
 
-### Clone the repository
+### Clone
 
 ```bash
 git clone https://github.com/veereshska15/Spam-Detector.git
 ```
+
+### Enter directory
 
 ```bash
 cd Spam-Detector
@@ -344,308 +323,175 @@ cd Spam-Detector
 pip install -r requirements.txt
 ```
 
-### Run the application
+### Launch AI engine
 
 ```bash
 streamlit run spamDetection.py
 ```
 
-The application will open in your browser.
+---
+
+## `> REQUIREMENTS`
 
 ```text
-LOCAL SERVER
-     │
-     ▼
-http://localhost:8501
+pandas
+scikit-learn
+streamlit
 ```
 
 ---
 
-# `11 // HOW THE APPLICATION WORKS`
-
-### Step 01 — Load dataset
-
-```python
-data = pd.read_csv("spam.csv")
-```
-
-### Step 02 — Clean dataset
-
-```python
-data.drop_duplicates(inplace=True)
-```
-
-### Step 03 — Split data
-
-```python
-train_test_split(
-    mess,
-    cat,
-    test_size=0.2
-)
-```
-
-### Step 04 — Convert text into numerical features
-
-```python
-cv.fit_transform(mess_train)
-```
-
-### Step 05 — Train the model
-
-```python
-model.fit(features, cat_train)
-```
-
-### Step 06 — Predict new message
-
-```python
-result = model.predict(input_message)
-```
-
-### Step 07 — Display result
+## `> SECURITY PIPELINE`
 
 ```text
-                MESSAGE
-                   │
-                   ▼
-             AI ANALYSIS
-                   │
-             ┌─────┴─────┐
-             ▼           ▼
-           SPAM       NOT SPAM
+                         ✉
+                    INCOMING MAIL
+                         │
+                         ▼
+                ┌─────────────────┐
+                │   NLP FILTER    │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │   AI ANALYZER   │
+                └────────┬────────┘
+                         │
+                    ┌────┴────┐
+                    ▼         ▼
+                 🚨 THREAT   🛡️ CLEAN
+                    │         │
+                    ▼         ▼
+                  BLOCK      ALLOW
 ```
 
 ---
 
-# `12 // SAMPLE TESTS`
+## `> TECHNOLOGY MATRIX`
 
-### Test 01
+<p align="center">
 
-```text
-Congratulations! You won a lottery
-```
+| Technology             | Purpose                |
+| ---------------------- | ---------------------- |
+| 🐍 **Python**          | Core programming       |
+| 📊 **Pandas**          | Data processing        |
+| 🔤 **CountVectorizer** | NLP feature extraction |
+| 🧠 **Naive Bayes**     | Classification         |
+| 🤖 **Scikit-learn**    | Machine learning       |
+| 🖥️ **Streamlit**      | Web interface          |
+| 🌐 **GitHub**          | Version control        |
 
-Expected:
-
-```text
-🚨 SPAM
-```
-
-### Test 02
-
-```text
-Hey, are you coming to college today?
-```
-
-Expected:
-
-```text
-✅ NOT SPAM
-```
-
-### Test 03
-
-```text
-WIN FREE CASH NOW!!!
-```
-
-Expected:
-
-```text
-🚨 SPAM
-```
+</p>
 
 ---
 
-# `13 // PYTHON CORE`
-
-This project is implemented primarily using **Python**.
-
-```python
-import pandas as pd
-
-from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
-
-import streamlit as st
-```
-
-### Python responsibilities
+## `> FUTURE UPGRADES`
 
 ```text
-Python
- │
- ├── Dataset Processing
- │
- ├── Data Cleaning
- │
- ├── Train/Test Split
- │
- ├── Feature Extraction
- │
- ├── Machine Learning
- │
- ├── Prediction
- │
- └── Streamlit Application
-```
-
----
-
-# `14 // SECURITY CONCEPT`
-
-This project demonstrates a basic **message threat-classification concept**.
-
-```text
-                UNKNOWN MESSAGE
-                       │
-                       ▼
-              ┌────────────────┐
-              │  ML ANALYZER   │
-              └───────┬────────┘
-                      │
-              ┌───────┴────────┐
-              ▼                ▼
-        HIGH SPAM SIGNAL    LOW SPAM SIGNAL
-              │                │
-              ▼                ▼
-           🚨 SPAM          ✅ SAFE
-```
-
-> **Note:** "Not Spam" does not mean a message is guaranteed to be safe. It only represents the model's learned classification.
-
----
-
-# `15 // FUTURE UPGRADES`
-
-```text
-[✓] Basic spam classification
-[✓] Naive Bayes model
+[✓] SMS spam detection
+[✓] Machine learning classifier
+[✓] NLP feature extraction
 [✓] Streamlit interface
-[✓] Text vectorization
 [✓] GitHub integration
 
-[ ] TF-IDF optimization
-[ ] Logistic Regression comparison
-[ ] Random Forest comparison
-[ ] Model accuracy dashboard
+[ ] TF-IDF
+[ ] Model comparison
 [ ] Confusion matrix
-[ ] Precision / Recall analysis
-[ ] NLP preprocessing pipeline
+[ ] Precision / Recall dashboard
+[ ] Advanced NLP preprocessing
 [ ] REST API
-[ ] Database integration
 [ ] Docker deployment
 [ ] Cloud deployment
-[ ] Real-time message analysis
+[ ] Real-time email scanning
+[ ] Deep learning model
 ```
 
 ---
 
-# `16 // LEARNING OUTCOMES`
-
-Through this project, the following concepts are demonstrated:
+## `> FUTURE VISION`
 
 ```text
-Python
-  │
-  ├── Pandas
-  ├── Data Cleaning
-  ├── Machine Learning
-  ├── NLP
-  ├── Feature Engineering
-  ├── Model Training
-  ├── Model Prediction
-  ├── Streamlit
-  └── Git / GitHub
+                         ✉
+                    EMAIL / SMS
+                         │
+                         ▼
+                ┌─────────────────┐
+                │    NLP ENGINE   │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │     AI MODEL    │
+                └────────┬────────┘
+                         │
+              ┌──────────┼──────────┐
+              ▼          ▼          ▼
+          EMAIL API   DATABASE   CLOUD AI
+              │          │          │
+              └──────────┼──────────┘
+                         ▼
+                  REAL-TIME THREAT
+                     DETECTION
 ```
 
 ---
 
-# `17 // COMMAND CENTER`
-
-```text
-┌─────────────────────────────────────────────────────┐
-│                 SPAM DETECTOR CLI                   │
-├─────────────────────────────────────────────────────┤
-│                                                     │
-│  $ python spamDetection.py                          │
-│                                                     │
-│  [SYSTEM] Loading dataset...                        │
-│  [DATA]   Cleaning messages...                      │
-│  [NLP]    Building feature matrix...                │
-│  [MODEL]  Initializing Naive Bayes...               │
-│  [MODEL]  Training classifier...                    │
-│  [AI]     Threat detection engine ONLINE            │
-│                                                     │
-│  STATUS: ██████████████████████████ 100%            │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
-
----
-
-# `18 // PROJECT STATUS`
-
-```text
-╔══════════════════════════════════════╗
-║         SYSTEM STATUS                ║
-╠══════════════════════════════════════╣
-║                                      ║
-║  Python Engine       [ ONLINE ]      ║
-║  ML Model            [ ONLINE ]      ║
-║  NLP Engine          [ ONLINE ]      ║
-║  Streamlit UI        [ ONLINE ]      ║
-║  Dataset             [ LOADED ]      ║
-║  GitHub              [ SYNCED ]      ║
-║                                      ║
-╚══════════════════════════════════════╝
-```
-
----
-
-# `19 // DEVELOPER`
+## `> DEVELOPER`
 
 <p align="center">
 
-### VEERESH S
+# VEERESH S
 
-**AIML Engineering Student | Python | Machine Learning | AI**
+### `AIML ENGINEER | PYTHON DEVELOPER | AI/ML`
+
+Building practical AI and machine learning systems with Python.
 
 </p>
 
 <p align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-veereshska15-000000?style=for-the-badge\&logo=github)](https://github.com/veereshska15)
+<a href="https://github.com/veereshska15">
+
+<img src="https://img.shields.io/badge/GITHUB-VEERESHS-7B2CFF?style=for-the-badge&logo=github&logoColor=white">
+
+</a>
 
 </p>
 
 ---
 
-# `20 // LICENSE`
+## `> REPOSITORY`
 
-This project is licensed under the **MIT License**.
+<p align="center">
+
+<a href="https://github.com/veereshska15/Spam-Detector">
+
+<img src="https://img.shields.io/badge/✉%20OPEN%20SPAM%20DETECTOR-00D9FF?style=for-the-badge&labelColor=080018&logo=github&logoColor=white">
+
+</a>
+
+</p>
 
 ---
 
 ```text
-╔══════════════════════════════════════════════════════╗
-║                                                      ║
-║             SYSTEM TERMINATED // 0x00                ║
-║                                                      ║
-║       "CLASSIFY THE MESSAGE. DETECT THE THREAT."     ║
-║                                                      ║
-║                    ██████████                        ║
-║                    █ SYSTEM █                        ║
-║                    █ ONLINE █                        ║
-║                    ██████████                        ║
-║                                                      ║
-╚══════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════╗
+║                                                            ║
+║              ✉  MESSAGE SECURITY SYSTEM                   ║
+║                                                            ║
+║                 AI ENGINE // ONLINE                       ║
+║                                                            ║
+║        DETECT  •  CLASSIFY  •  ANALYZE  •  PROTECT       ║
+║                                                            ║
+╚════════════════════════════════════════════════════════════╝
 ```
 
 <p align="center">
+
+### `✉ INBOX SECURITY // AI READY`
 
 **Built with Python • Machine Learning • NLP • Streamlit**
+
+`[ SYSTEM ONLINE ]` `✉ [ MAIL SCANNER READY ]` `🧠 [ AI READY ]`
 
 </p>
